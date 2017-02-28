@@ -4,12 +4,14 @@ A monitoring solution for Docker hosts and containers with [Prometheus](https://
 [NodeExporter](https://github.com/prometheus/node_exporter) and alerting with [AlertManager](https://github.com/prometheus/alertmanager).
 
 ## Install
+First, visit my website to see more tutorial: http://lazyadmin.info
+Second, create storage GlusterFS with Docker: http://lazyadmin.info/python/use-glusterfs-with-docker-container-swarm-mode-post19
 
-Clone this repository on your Docker host, cd into dockprom directory and run compose up:
+Next, clone this repository on your Docker host, cd into dockprom directory and run compose up:
 
-* `$ git clone https://github.com/stefanprodan/dockprom` 
+* `$ git clone https://github.com/phuthinh2202/prometheus-grafana-docker` 
 * `$ cd dockprom`
-* `$ docker-compose up -d`
+* `$ docker stack deploy --compose-file docker-compose-monitor.yaml monitor`
 
 Containers:
 
