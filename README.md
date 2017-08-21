@@ -13,6 +13,9 @@ Next, clone this repository on your Docker host, cd into dockprom directory and 
 * `$ cd dockprom`
 * `$ docker stack deploy --compose-file docker-compose-monitor.yaml monitor`
 
+on Docker Host:
+* `$ docker-compose --compose-file docker-compose.exporters.yml`
+
 Containers:
 
 * Prometheus (metrics database) `http://<host-ip>:9090`
